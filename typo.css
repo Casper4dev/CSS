@@ -1,0 +1,63 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(210,207,207);
+
+}
+.container{
+    background: white;
+    width:35%;
+    margin:5% auto;
+    padding:20px;
+    border-radius: 10px;
+}
+
+.container > img{
+    width:150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border:3px dashed crimson;
+    padding:5px;
+}
+.container h1{
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.title{
+    text-align:center ;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: crimson;
+}
+
+.desc{
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+.container > button{
+    margin-top: 10px;
+    width: 100%;
+    padding: 9px;
+    background: crimson;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.container > button:hover{
+    opacity: 0.5;
+}
