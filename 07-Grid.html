@@ -5,22 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
     <style>
-
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4,300px)
+        }
         .box{
             padding:.5rem;
             color: white;
         }
         .box:nth-child(1){
             background: red;
+            grid-column: span 3;
         }
         .box:nth-child(2){
             background: green;
+            grid-row: span 2;
         }
         .box:nth-child(3){
             background: crimson;
         }
         .box:nth-child(4){
             background: purple;
+            grid-column: span 2;
         }
     </style>
 </head>
