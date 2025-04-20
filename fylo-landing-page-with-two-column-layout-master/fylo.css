@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Luckiest+Guy&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(240, 75%, 98%);
+    color: black;
+    font-family: "Open Sans", sans-serif;
+}
+.logo{
+    width: 100%;
+    padding: 20px;
+}
+.nav-items {
+    list-style: none;
+    position: relative;
+}
+
+.nav-items li {
+    display: inline;
+    margin: 0 15px;
+    color: hsl(243, 87%, 12%);
+}
+h2{
+    color: hsl(243, 87%, 12%);
+}
+h3, h4{
+    font-weight: 400;
+}
+h5{
+    font-size: 17px;
+}
+.btn2{
+    font-family: "Raleway", sans-serif;
+    background-color: hsl(224, 93%, 58%);
+    border: none;
+    height: 50px;
+    width: 300px;
+    padding: 20px;
+    color: hsl(240, 75%, 98%);
+}
+.btn3{
+    font-family: "Raleway", sans-serif;
+    background-color: hsl(224, 93%, 58%);
+    border: none;
+    height: 50px;
+    width: 300px;
+    padding: 20px;
+    color: hsl(240, 75%, 98%);
+}
+ul li{
+    list-style: none;
+    line-height:3rem;
+}
+p{
+    color: hsl(240, 2%, 48%)
+}
+.direct{
+    text-align: center;
+   color: hsl(170, 45%, 43%);
+}
+.testimonial{
+    background-color: white;
+    color: hsl(243, 87%, 12%);
+    font-size: 13px;
+    font-weight: 400;
+    height: 200px;
+    width: 350px;
+    margin:20px;
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+}
+.three{
+    align-items: center;
+    background-color:hsl(238, 22%, 44%);
+    color:hsl(240, 75%, 98%);
+    padding:60px;
+}
+img{
+    border-radius: 100px;
+    height: 30px;
+    width: 30px;
+}
+.input::placeholder{
+    color:hsl(0, 0%, 75%);
+    padding: 10px;
+    font-weight: 100;
+}
+.four{
+    background-color:hsl(243, 87%, 12%);
+    color:hsl(240, 75%, 98%);
+    padding:100px;
+}
+.contact{
+    padding-right: 15px;
+}

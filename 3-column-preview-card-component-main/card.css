@@ -53,8 +53,7 @@ p{
 button:hover{
      background: transparent;
      color:hsla(0, 0%, 100%, 0.75);
-     border-color: hsla(0, 0%, 100%, 0.75);
-     border-width: 3px;
+     border: white 1px solid;
 }
 .btn1{
         background-color:hsla(0, 0%, 100%, 0.75);

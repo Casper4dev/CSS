@@ -6,12 +6,33 @@
     <title>Transition / Transform & Animation </title>
     
     <style>
+        .container{
+            width:40%;
+            height:5rem;
+            background:crimson;
+            cursor:pointer;
+            transition:all 0.4s;
+            transform: translateX(-80%);
+        }
+        .container:hover{
+            width:70%;
+            background: teal;
+            transform: translateX(0);
+        }
         .div1{
             width: 100px;
             height: 100px;
             background: blue;
             margin: 2rem auto;
             cursor: pointer;
+            transition:all 1s ease;
+            transform: rotate(250deg);
+            /* transform:skew(20deg) */
+        }
+        .div1:hover{
+            transform: rotate(0);
+            transform:scale(1.5);
+            box-shadow: 10px 10px 8px black
         }
 
         .div2{
@@ -19,14 +40,47 @@
             width: 100px;
             height: 100px;
             margin: 2rem auto;
-            border-radius: 50%;
+            animation:rotate 5s infinite;
         }
+
+
+        @keyframes rotate{
+            0%{
+                transform:rotate(0deg);
+            }
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+
+        .div3{
+            background: teal;
+            width: 100px;
+            height:100px;
+            margin: 2rem auto;
+            animation:pulse 2s infinite;
+        }
+
+        @keyframes pulse{
+            0%{
+                transform : scale(1);
+            }
+            50%{
+                transform: scale(1.5);
+                background: goldenrod;
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        
 
        
     </style>
 </head>
 <body>
  <!----Transform-->
+ <div class="container"></div>
  <div class="div1"></div>
  <div class="div2"></div>
  <div class="div3"></div>
