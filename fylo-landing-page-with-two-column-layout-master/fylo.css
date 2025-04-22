@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Luckiest+Guy&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
 
-body {
+*{
     margin: 0;
     padding: 0;
+}
+body {
+    margin: 0;
+    padding: 20px;
     background-color: hsl(240, 75%, 98%);
     font-family: "Open Sans", sans-serif;
 }
@@ -11,7 +15,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 15px 15px;
+    margin-bottom: 40px;
 
 }
 .logo{
@@ -19,14 +24,13 @@ header{
     justify-content: flex-start;
 }
 .nav-items {
-    list-style: none;
     display: flex;
+    list-style: none;
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .nav-items li {
-    display: inline;
     margin: 0 15px;
     color: hsl(243, 87%, 12%);
 }
@@ -34,13 +38,25 @@ h2{
     color: hsl(243, 87%, 12%);
     font-family: "Raleway", sans-serif;
 }
-h3, h4{
+h3{
     font-weight: 400;
     font-family: "Raleway", sans-serif;
+    align-items: center;
 }
-h5{
-    font-size: 17px;
+h4{
+    font-weight: 500;
     font-family: "Raleway", sans-serif;
+    align-items: center;
+    line-height: 2rem;
+}
+h5,h6{
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+}
+h6{
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
 }
 .btn2{
     font-family: "Raleway", sans-serif;
@@ -68,7 +84,7 @@ h5{
 
 ul li{
     list-style: none;
-    line-height:3rem;
+    line-height:5rem;
 }
 p{
     color: hsl(240, 2%, 48%)
@@ -76,13 +92,23 @@ p{
 .direct{
     text-align: center;
     color: hsl(170, 45%, 43%);
-    padding: none;
+    margin-bottom: 8px;
 }
 .arrow{
+    display:inline-flex;
+    flex-direction: column;
+    object-fit: cover;
     height: 30px;
     width: 30px;
-    padding:none;
     margin: auto;
+}
+hr{
+   border:1px solid hsl(170, 45%, 43%);
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 0;
 }
 .testimonial{
     background-color: white;
@@ -90,16 +116,11 @@ p{
     font-size: 13px;
     font-weight: 400;
     height: 200px;
-    width: 350px;
-    margin:20px;
+    width: 300px;
+    margin-bottom:40px;
     border-radius: 10px;
-    padding: 20px;
-    align-items: center;
-}
-.arrow{
-    height: 30px;
-    width: 30px;
-    padding:none;
+    padding: 30px;
+   justify-content: center;
 }
 .ilstn{
     height: 500px;
@@ -115,25 +136,27 @@ p{
     padding: 10px;
     font-weight: 100;
 }
-/* .one{
-    max-height: 100vh;
-    margin:0 0 100px 0;
+input{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width:300px;
+    max-width: 350px;
+    border-radius: 5px;
+    border: 1px solid;
 }
-.two{
-    max-height: 100vh;
-} */
 .three{
     align-items: center;
     background-color:hsl(238, 22%, 44%);
     color:hsl(240, 75%, 98%);
-    padding:60px;
-    max-height: 100vh;
+    padding:40px 20px;
+    margin: 0;
 }
 .four{
     background-color:hsl(243, 87%, 12%);
     color:hsl(240, 75%, 98%);
-    padding:100px;
-    max-height: 100vh;
+    padding:40px 20px;
+    margin: 0;
 }
 .four > svg{
     color: #FFF;
@@ -141,4 +164,52 @@ p{
 
 .contact{
     padding-right: 15px;
+    line-height: 2rem;
 }
+a{
+    width: 24px;
+    margin-left: 10px;
+    justify-content: flex-start;
+}
+@media (max-width: 375px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px;
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+    }
+  
+    .nav-items {
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+    }
+  
+    .btn2,
+    .btn3 {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .testimonial {
+      height: auto;
+      padding: 20px;
+      font-size: 14px;
+    }
+  
+    .ilstn {
+      width: 100%;
+      height: auto;
+    }
+  
+    ul li {
+      line-height: 3rem;
+    }
+  
+    .input::placeholder {
+      font-size: 13px;
+    }
+  }
