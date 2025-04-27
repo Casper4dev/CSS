@@ -7,7 +7,6 @@
 }
 body {
     margin: 0;
-    padding: 20px;
     background-color: hsl(240, 75%, 98%);
     font-family: "Open Sans", sans-serif;
 }
@@ -15,33 +14,47 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 15px;
-    margin-bottom: 40px;
+    padding: 10px 40px;
 
 }
 .logo{
-    padding: 10px;
-    justify-content: flex-start;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.logo2{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    color: white;
 }
 .nav-items {
     display: flex;
     list-style: none;
     margin: 0;
-    font-size: 14px;
+    padding: 0;
 }
 
 .nav-items li {
-    margin: 0 15px;
     color: hsl(243, 87%, 12%);
+    justify-content: flex-end;
+    padding: 10px;
 }
+
 h2{
     color: hsl(243, 87%, 12%);
     font-family: "Raleway", sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+
 }
 h3{
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 16px;
     font-family: "Raleway", sans-serif;
-    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
 }
 h4{
     font-weight: 500;
@@ -49,14 +62,34 @@ h4{
     align-items: center;
     line-height: 2rem;
 }
-h5,h6{
+.fylo{
+    text-align: left;
+}
+.p1{
+    color: hsl(240, 2%, 48%);
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.p2{
+    color: hsl(240, 2%, 48%);
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+h5{
     font-size: 16px;
     font-family: "Raleway", sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 h6{
-    font-size: 16px;
+    font-size: 17px;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .btn2{
     font-family: "Raleway", sans-serif;
@@ -69,6 +102,7 @@ h6{
     color: hsl(240, 75%, 98%);
     text-align: center;
     font-weight: 700;
+    margin-bottom: 20px;
 }
 .btn3{
     font-family: "Raleway", sans-serif;
@@ -86,9 +120,7 @@ ul li{
     list-style: none;
     line-height:5rem;
 }
-p{
-    color: hsl(240, 2%, 48%)
-}
+
 .direct{
     text-align: center;
     color: hsl(170, 45%, 43%);
@@ -118,6 +150,7 @@ hr{
     height: 200px;
     width: 300px;
     margin-bottom:40px;
+    margin-top: 10px;
     border-radius: 10px;
     padding: 30px;
    justify-content: center;
@@ -137,13 +170,24 @@ hr{
     font-weight: 100;
 }
 input{
-    padding: 10px;
+    padding: 15px;
     margin-top: 10px;
-    margin-bottom: 20px;
-    width:300px;
-    max-width: 350px;
+    margin-bottom: 10px;
+    width: 300px;
     border-radius: 5px;
     border: 1px solid;
+}
+.input2{
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+}
+.one, .two{
+    padding: 20px;
+
 }
 .three{
     align-items: center;
@@ -158,7 +202,7 @@ input{
     padding:40px 20px;
     margin: 0;
 }
-.four > svg{
+.four > img{
     color: #FFF;
 }
 
@@ -169,23 +213,43 @@ input{
 a{
     width: 24px;
     margin-left: 10px;
-    justify-content: flex-start;
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+}
+.icon-circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    color: #FFF;
 }
 @media (max-width: 375px) {
     header {
-      flex-direction: column;
+      flex-direction: row;
       align-items: flex-start;
-      padding: 15px;
+      padding: 10px;
     }
   
     .logo {
       margin-bottom: 10px;
+      width: 1%;
+      height: 50%;
     }
   
     .nav-items {
-      flex-direction: column;
+      display: contents;
+      gap: 3%;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 50px;
       align-items: flex-end;
-      gap: 10px;
+    }
+
+    .nav-items li {
+        color: hsl(243, 87%, 12%);
+        padding: 5px;
+        font-size: 14px;
     }
   
     .btn2,
